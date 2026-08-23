@@ -1,0 +1,14 @@
+[project]
+name = "rag-service"
+version = "0.1.0"
+description = "RAG service panduan operasional NusantaraCare"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi[standard]",
+    "google-genai",
+    "chromadb",
+    "pyyaml"
+]
+
+[tool.fastapi]
+entrypoint = "app.main:app"
